@@ -41,7 +41,9 @@ export default class About extends Component {
                     my career as a full-stack web and mobile application
                     developer.
                   </p>
-                  <button className="btn">My Resume</button>
+                  <a className="btn" href="/assets/resume.pdf" target="_blank">
+                    My Resume
+                  </a>
                 </div>
               </div>
               <div className="about-body-right">
