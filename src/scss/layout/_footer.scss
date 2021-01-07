@@ -1,0 +1,36 @@
+.bckgrnd {
+  background-color: $black;
+}
+.footer-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+
+  .icon-group {
+    display: flex;
+    justify-content: center;
+
+    a {
+      background-color: $tangerine;
+      margin: 0 2em 1em;
+      border-radius: 5px;
+    }
+
+    .social-icon {
+      padding: 1em;
+    }
+  }
+
+  .svg {
+    margin: 0.8em;
+  }
+
+  .info-box {
+    display: flex;
+    justify-content: center;
+
+    color: $body-light;
+    font-family: $font-family;
+  }
+}

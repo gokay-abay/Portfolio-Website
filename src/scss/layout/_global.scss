@@ -1,0 +1,25 @@
+@import "../base/fonts";
+
+.App {
+  //   align-content: center;
+  //   margin: auto 0;
+  background-color: $dark-bg;
+}
+.wrap {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+// body {
+//   @include heading-bold;
+// }
+
+.section {
+  padding-top: 8em;
+  padding-bottom: 10em;
+}
+
+.title {
+  margin-bottom: 5em;
+}

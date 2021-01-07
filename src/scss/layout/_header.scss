@@ -1,0 +1,28 @@
+@import "../base/fonts";
+
+.header-con {
+  height: 100vh;
+  position: relative;
+}
+
+.intro-con {
+  @include heading-bold;
+  color: $body-light;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h2 {
+    span {
+      color: $tangerine;
+    }
+    margin-bottom: 1em;
+  }
+
+  .btn-con {
+    margin-top: 8em;
+  }
+}

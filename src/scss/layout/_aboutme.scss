@@ -1,0 +1,86 @@
+.aboutme-con {
+  background-color: white;
+
+  h2 {
+    color: $body-dark;
+    letter-spacing: 15px;
+  }
+
+  // .about {
+  //   border-bottom: 3px solid $tangerine;
+  // }
+  .about-body {
+    display: flex;
+
+    // .left-about {
+    //   width: 100%;
+    // }
+
+    .about-body-left {
+      width: 50%;
+      padding: 2em 2em;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+
+    .about-body-right {
+      width: 50%;
+      padding: 0 2em;
+
+      h3 {
+        color: $body-dark;
+        margin-bottom: 1em;
+        text-align: center;
+      }
+
+      .tech-icon-con {
+        display: flex;
+        flex-wrap: wrap;
+
+        .tech-icon {
+          padding: 1em;
+        }
+      }
+    }
+
+    .right-about p {
+      color: $body-dark;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+
+  .btn {
+    margin: 4em 0 0 0;
+  }
+}
+
+@media (max-width: 769px) {
+  .section {
+    padding: 5em 0;
+  }
+
+  .aboutme-con {
+    .about-body {
+      display: flex;
+      flex-direction: column;
+
+      .about-body-left {
+        width: 100%;
+      }
+
+      .about-body-right {
+        width: 100%;
+        padding-top: 3em;
+
+        h3 {
+          font-weight: bold;
+          font-size: 25px;
+        }
+      }
+    }
+
+    .btn {
+      text-align: center;
+    }
+  }
+}

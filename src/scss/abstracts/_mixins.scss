@@ -1,0 +1,51 @@
+/*--------------------------------------------
+# Mixin to manage responsive breakpoints
+--------------------------------------------*/
+
+$breakpoints: (
+  "small": 767px,
+  "medium": 992px,
+  "large": 1200px,
+) !default;
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Available break are: #{map-keys($breakpoints)}. ";
+  }
+}
+
+@mixin gradient {
+  background: rgb(222, 98, 98);
+  background: linear-gradient(
+    90deg,
+    rgba(222, 98, 98, 1) 0%,
+    rgba(255, 184, 140, 1) 100%
+  );
+}
+
+@mixin gradient-light {
+  background: rgb(222, 98, 98);
+  background: linear-gradient(
+    180deg,
+    rgba(222, 98, 98, 1) 0%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
+@mixin sectionPadding {
+  padding: 60px;
+}
+
+@mixin fullImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+@mixin transition15 {
+  transition: (all 0.15s ease-out 0s);
+}

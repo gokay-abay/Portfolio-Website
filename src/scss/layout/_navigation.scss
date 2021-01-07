@@ -1,0 +1,109 @@
+.navbar {
+  @include heading-bold;
+  // position: fixed;
+  // top: 0;
+  color: $body-light;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    span {
+      font-family: $hand-writing;
+      font-size: 20px;
+    }
+  }
+
+  .toggle-con {
+    position: fixed;
+    z-index: 600;
+    right: 2rem;
+  }
+
+  #toggle {
+    padding: 0;
+
+    .hamburger-box {
+      height: 10px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background-color: $body-light;
+      width: 25px;
+      height: 1px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    //position: fixed;
+
+    .nav-item > .active {
+      border-bottom: 2px solid $tangerine;
+    }
+
+    a {
+      //   transition: 0.3;
+      margin-left: 3em;
+      position: relative;
+      cursor: pointer;
+    }
+
+    a::before {
+      transition: 300ms;
+      height: 2px;
+      content: "";
+      position: absolute;
+      background-color: $tangerine;
+      top: 22px;
+      width: 0;
+      bottom: 10px;
+    }
+
+    a:hover::before {
+      width: 100%;
+    }
+
+    // a:hover {
+    //   border-bottom: 2px solid $tangerine;
+    // }
+  }
+}
+
+@media (max-width: 768px) {
+  // .nav-item-container {
+  //   height: 100%;
+  //   width: 0;
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   overflow: hidden;
+  //   transition: 0.5s;
+  // }
+
+  // .overlay-content {
+  //   position: relative;
+  //   top: 25%;
+  //   width: 100%;
+  //   text-align: center;
+  //   margin-top: 30px;
+  // }
+  .nav-item-container ul {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  #toggle {
+    display: none;
+  }
+}

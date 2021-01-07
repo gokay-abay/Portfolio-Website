@@ -1,0 +1,36 @@
+// @import "semantic-ui-css/semantic.min.css";
+
+.form-cont {
+  //max-width: 600px;
+  //background-color: white;
+
+  .form {
+    max-width: 600px;
+    margin: 0 auto;
+    //padding: 2em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: $black;
+    border: 1px solid $black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: $body-light;
+  }
+
+  textarea:focus,
+  input:focus {
+    outline: none;
+  }
+
+  .btn {
+    font-family: $font-family;
+  }
+}

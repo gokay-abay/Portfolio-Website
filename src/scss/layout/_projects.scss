@@ -1,0 +1,67 @@
+.proj-con {
+  //background-color: $tangerine;
+  //@include gradient-light;
+  //border-radius: 1em;
+  // text-align: center;
+  h2 {
+    color: $body-light;
+    letter-spacing: 15px;
+  }
+}
+
+.card-con {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.proj-card {
+  display: flex;
+  height: 150px;
+  width: 600px;
+  border-radius: 5px;
+  background-color: $white;
+  margin: 1em;
+  box-shadow: 0 10px 6px -6px;
+
+  .proj-img {
+    height: 100%;
+    .img {
+      height: 150px;
+    }
+  }
+
+  .proj-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+
+    p {
+      color: $black;
+      font-family: $font-family;
+    }
+
+    .card-btn-con {
+      text-align: right;
+      a {
+        .card-btn {
+          border: 1px solid $tangerine;
+          color: $tangerine;
+          border-radius: 20px;
+          width: 70px;
+          font-size: 8px;
+          padding: 0.5em;
+          letter-spacing: 0;
+          font-family: $font-family;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+// @include respond-to("small") {
+//   .proj-card {
+//   }
+// }

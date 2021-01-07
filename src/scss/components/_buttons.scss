@@ -1,0 +1,37 @@
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid $tangerine;
+  border-radius: 30px;
+  color: $tangerine;
+  width: 200px;
+  font-family: $font-family;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 1em 2em;
+  transition: all 0.3s ease-in;
+  // background: linear-gradient(to right, $tangerine 0, transparent);
+  // background-size: 200% 100%;
+  // background-position: right bottom;
+  // transition: all 0.5s ease-out;
+}
+
+.btn:hover {
+  background-color: $tangerine;
+  color: $body-light;
+  // opacity: 0.7;
+  // background-position: left bottom;
+}
