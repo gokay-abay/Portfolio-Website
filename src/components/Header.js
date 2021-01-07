@@ -51,9 +51,23 @@ export default class Header extends Component {
             </h2>
             <h3>a full-stack web developer.</h3>
           </Typist>
+          <div className="social-icons-cont">
+            <a href="mailto:abaygokay@gmail.com" target="_blank">
+              <i class="far fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/gokay-abay/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/gokay-abay" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/abay_gokay" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
           <Fade duration={2000} delay={3500}>
             <div className="btn-con">
-              <button className="btn">Contact</button>
+              <button className="btn">My Work</button>
             </div>
           </Fade>
         </div>

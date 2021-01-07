@@ -22,7 +22,19 @@
     margin-bottom: 1em;
   }
 
+  .social-icons-cont {
+    a {
+      text-decoration: none;
+
+      i {
+        color: $body-light;
+        font-size: 20px;
+        margin: 2em 0.5em;
+      }
+    }
+  }
+
   .btn-con {
-    margin-top: 8em;
+    margin-top: 6em;
   }
 }
