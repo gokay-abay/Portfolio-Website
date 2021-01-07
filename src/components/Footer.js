@@ -17,9 +17,22 @@ export default class Footer extends Component {
               <GithubIcon />
             </a>
           </div> */}
-          <button>Up</button>
+          <div className="icon-group">
+            <a href="mailto:abaygokay@gmail.com" target="_blank">
+              <i class="far fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/gokay-abay/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/gokay-abay" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/abay_gokay" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
           <div className="info-box">
-            <span>&copy; 2020 Gökay Abay</span>
+            <span>Gökay Abay &copy; 2021 </span>
           </div>
         </div>
       </div>

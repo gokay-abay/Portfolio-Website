@@ -12,18 +12,13 @@
     justify-content: center;
 
     a {
-      background-color: $tangerine;
-      margin: 0 2em 1em;
-      border-radius: 5px;
-    }
+      color: $body-light;
+      padding: 0 1em 1em;
 
-    .social-icon {
-      padding: 1em;
+      i {
+        font-size: 20px;
+      }
     }
-  }
-
-  .svg {
-    margin: 0.8em;
   }
 
   .info-box {
