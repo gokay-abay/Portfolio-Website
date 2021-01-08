@@ -3,17 +3,19 @@
 .header-con {
   height: 100vh;
   position: relative;
+  flex-flow: column;
+  display: flex;
 }
 
 .intro-con {
   @include heading-bold;
   color: $body-light;
-  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-grow: 1;
 
   h2 {
     span {

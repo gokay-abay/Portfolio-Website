@@ -26,9 +26,7 @@ export default class ContactMe extends Component {
     });
 
     this.setState({ name: "", email: "", message: "" });
-  };
 
-  confirm = () => {
     this.setState({ isSubmitted: true });
     setTimeout(() => {
       this.setState({ isSubmitted: false });
@@ -74,12 +72,7 @@ export default class ContactMe extends Component {
                   value={message}
                 ></textarea>
 
-                <input
-                  className="btn"
-                  type="submit"
-                  value="Submit"
-                  onClick={this.confirm}
-                />
+                <input className="btn" type="submit" value="Send" />
               </form>
             </div>
           </Fade>

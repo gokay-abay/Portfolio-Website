@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-scroll";
+
 import { LinkedinIcon, TwitterIcon, GithubIcon } from "./Interface";
 
 export default class Footer extends Component {
@@ -17,6 +19,18 @@ export default class Footer extends Component {
               <GithubIcon />
             </a>
           </div> */}
+          <div className="up-btn">
+            <Link
+              activeClass="active"
+              to="header"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              <i class="fas fa-chevron-circle-up"></i>
+            </Link>
+          </div>
           <div className="icon-group">
             <a href="mailto:abaygokay@gmail.com" target="_blank">
               <i class="far fa-envelope"></i>

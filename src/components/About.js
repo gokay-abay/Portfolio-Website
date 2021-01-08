@@ -19,30 +19,32 @@ export default class About extends Component {
                 <div className="right-about">
                   <p>
                     Hi again, my name is Gökay, and I am a full-stack web
-                    developer based in Vancouver. I am in love with two things:
-                    geology and magic. I have a degree in the first one and for
-                    the second, I am currently studying software development.
-                    Creating and building something unique on the web is the
+                    developer based in Vancouver. Science and computers have
+                    always fascinated me. I went on to obtain a degree in
+                    geology but part of me always wanted to learn more about the
+                    language of computers. Thus, here I am, currently studying
+                    software development at BCIT. The beauty of programming to
+                    me is that creating something unique on the web is the
                     closest one can get to real life magic.
                   </p>
                   <br />
                   <p>
-                    I started my journey of becoming a software developer on
-                    June 18th, 2018. Yes, I do remember the date because that is
-                    the day I made a firm decision to become one after years of
-                    interest. Since then, I have been teaching myself web and
-                    mobile application development and creating apps that use
-                    various technologies in my spare time. By the end of 2019, I
-                    decided to have a formal education in software development.
-                    After long research, I enrolled in the Software System
-                    Developer program at BCIT, one of Canada's most reputable
-                    institutions. Having a strong interest and experience in
-                    both frontend and backend languages, I am excited to further
-                    my career as a full-stack web and mobile application
-                    developer.
+                    I started my journey to becoming a software developer on
+                    June 18th, 2018. Yes, I do remember the exact date because
+                    it was that day I made a firm decision to become one after
+                    many years of interest. Since then, I have been teaching
+                    myself web and mobile application development and creating
+                    apps that use various technologies in my spare time. By the
+                    end of 2019, I had decided to have a formal education in
+                    software development. After an extensive research, I
+                    enrolled in the Software System Developer program at BCIT,
+                    one of Canada's most reputable institutions. Having a strong
+                    interest and experience in both frontend and backend
+                    languages, I am excited to further my career as a full-stack
+                    web and mobile application developer.
                   </p>
-                  <a className="btn" href="/assets/resume.pdf" target="_blank">
-                    My Resume
+                  <a href="/assets/resume.pdf" target="_blank">
+                    <button className="btn">My Resume</button>
                   </a>
                 </div>
               </div>
