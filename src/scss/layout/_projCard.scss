@@ -1,0 +1,115 @@
+// #title {
+//   font-size: 1.5rem;
+//   font-weight: 300;
+// }
+
+// .icon {
+//   font-size: 0.9rem;
+//   display: inline-flex;
+//   background: #d8d8d8;
+//   border-radius: 3px;
+//   margin-right: 5px;
+//   margin-bottom: 15px;
+//   span {
+//     border-radius: 5px;
+//     padding: 3px 5px;
+//   }
+// }
+
+// .react {
+//   background: #bad5f5;
+//   span::after {
+//     content: "React.js";
+//   }
+// }
+
+// .express {
+//   background: #f2c986;
+//   span::after {
+//     content: "Express";
+//   }
+// }
+
+// .node {
+//   background: #e1c1c1;
+//   span::after {
+//     content: "Node.js";
+//   }
+// }
+
+// .python {
+//   background: #eadd86;
+//   span::after {
+//     content: "Python";
+//   }
+// }
+
+// .django {
+//   background: #afeae5;
+//   span::after {
+//     content: "Django";
+//   }
+// }
+
+// .card {
+//   a {
+//     padding-right: 15px;
+//   }
+// }
+
+// .github {
+//   color: #739150;
+// }
+
+// .status {
+//   color: #7699c2;
+// }
+
+#proj-title {
+  color: $black;
+  margin-bottom: 1em;
+}
+
+.tags {
+  display: flex;
+  margin-bottom: 1em;
+  .tag {
+    background-color: #bad5f5;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+  }
+}
+
+p {
+  color: $body-dark;
+  line-height: 1.2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.btn-con {
+  // display: flex;
+  // justify-content: flex-end;
+  .card-btn {
+    background-color: $tangerine;
+    border: 1px solid $tangerine;
+    color: $white;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 100px;
+    font-size: 12px;
+    padding: 0.5em;
+    letter-spacing: 0;
+    font-family: $font-family;
+    margin-left: 5px;
+  }
+
+  .card-btn:hover {
+    background-color: transparent;
+    color: $tangerine;
+  }
+}

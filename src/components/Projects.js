@@ -1,7 +1,9 @@
-import React, { Component } from "react";
-import Button from "@material-ui/core/Button";
-import Fade from "react-reveal/Fade";
-import ProjectCard from "./ProjectCard";
+import React, { Component } from "react"
+import Button from "@material-ui/core/Button"
+import Fade from "react-reveal/Fade"
+import ProjectCard from "./ProjectCard"
+import ProjCard from "./ProjCard"
+import { projects } from "../data/projects"
 
 export default class Projects extends Component {
   render() {
@@ -13,14 +15,14 @@ export default class Projects extends Component {
               <h2>Projects</h2>
             </div>
             <div className="card-con">
-              <ProjectCard
+              {/* <ProjectCard
                 imageUrl="https://i.ibb.co/Wp8zyCH/Screen-Shot-2020-12-17-at-4-12-24-PM.png"
                 title="Amazombie"
                 code="https://github.com/BCIT-SSD-2020-21/front-end-project-ctrl-alt-defeat"
                 website="https://fepamazombie.netlify.app/"
                 info="A front-end e-commerce website. Shoutout to all my team mates for helping me making this website a reality."
-              />
-              <ProjectCard
+              /> */}
+              {/* <ProjectCard
                 imageUrl="https://i.ibb.co/85RCSQQ/moviedb.png"
                 title="Movie API"
                 code="https://github.com/BCIT-SSD-2020-21/lab-2---react-gokay-abay"
@@ -34,11 +36,21 @@ export default class Projects extends Component {
                 code="https://github.com/BCIT-SSD-2020-21/dotnetproject-team5_netproject"
                 website="https://armoire.azurewebsites.net/"
                 info="A virtual closet app that allows users to store their clothes in a database."
-              />
+              /> */}
+              {projects.map((proj) => (
+                <ProjCard
+                  imageUrl={proj.imageUrl}
+                  title={proj.title}
+                  website={proj.website}
+                  code={proj.code}
+                  desc={proj.desc}
+                  tags={proj.tags}
+                />
+              ))}
             </div>
           </div>
         </Fade>
       </div>
-    );
+    )
   }
 }
