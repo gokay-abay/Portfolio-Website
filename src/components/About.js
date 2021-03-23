@@ -1,6 +1,14 @@
-import React, { Component } from "react";
-import Fade from "react-reveal/Fade";
-import { CssIcon, ReactIcon, HtmlIcon, NodejsIcon } from "./Interface";
+import React, { Component } from "react"
+import Fade from "react-reveal/Fade"
+import {
+  CssIcon,
+  ReactIcon,
+  HtmlIcon,
+  NodejsIcon,
+  MongoDB,
+  SQL,
+} from "./Interface"
+import image from "../assets/bodyBW.png"
 
 export default class About extends Component {
   render() {
@@ -10,6 +18,7 @@ export default class About extends Component {
           <div className="wrap section">
             <div className="title about">
               <h2>About Me</h2>
+              <div className="section-title-underline"></div>
             </div>
             <div className="about-body">
               <div className="about-body-left">
@@ -19,13 +28,13 @@ export default class About extends Component {
                 <div className="right-about">
                   <p>
                     I am Gökay, a full-stack web developer based in Vancouver.
-                    Science and computers have always fascinated me. I went on
-                    to obtain a degree in geology but part of me always wanted
-                    to learn more about the language of computers. Thus, here I
-                    am, currently studying software development at BCIT. The
-                    beauty of programming to me is that creating something
-                    unique on the web is the closest one can get to real life
-                    magic.
+                    Science and computers have always fascinated me. I obtained
+                    a degree in geology but part of me always wanted to learn
+                    more about the language of computers. Thus, here I am,
+                    currently studying software development at British Columbia
+                    Institute of Technology (BCIT). The beauty of programming to
+                    me is that creating something unique on the web is the
+                    closest one can get to real life magic.
                   </p>
                   <br />
                   <p>
@@ -34,7 +43,7 @@ export default class About extends Component {
                     and mobile application development and creating apps that
                     use various technologies in my spare time. As productive as
                     my self-directed learning was, I decided to seek formal
-                    education near the end of 2019 After extensive research, I
+                    education near the end of 2019. After extensive research, I
                     enrolled in the Software System Developer program at BCIT.
                     Having a strong interest and experience in both frontend and
                     backend languages, I am excited to further my career as a
@@ -46,26 +55,28 @@ export default class About extends Component {
                 </div>
               </div>
               <div className="about-body-right">
-                <h3>Stack I use</h3>
+                <div id="profile-pic">
+                  <img height="500px" src={image} alt="" />
+                </div>
                 <div className="tech-icon-con">
-                  <div className="tech-icon">
-                    <HtmlIcon />
-                  </div>
-                  <div className="tech-icon">
-                    <CssIcon />
-                  </div>
-                  <div className="tech-icon">
+                  {/* <div className="tech-icon">
                     <ReactIcon />
                   </div>
                   <div className="tech-icon">
                     <NodejsIcon />
                   </div>
+                  <div className="tech-icon">
+                    <MongoDB />
+                  </div>
+                  <div className="tezh-icon">
+                    <SQL />
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
         </Fade>
       </div>
-    );
+    )
   }
 }

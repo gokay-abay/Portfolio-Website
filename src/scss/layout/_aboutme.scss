@@ -1,3 +1,8 @@
+.section-title-underline {
+  width: 150px;
+  height: 3px;
+  background-color: $tangerine;
+}
 .aboutme-con {
   background-color: white;
 
@@ -11,7 +16,7 @@
   // }
   .about-body {
     display: flex;
-
+    justify-items: center;
     // .left-about {
     //   width: 100%;
     // }
@@ -33,9 +38,20 @@
         text-align: center;
       }
 
+      #profile-pic {
+        display: flex;
+        justify-content: center;
+
+        img {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          border-radius: 10px;
+        }
+      }
+
       .tech-icon-con {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
 
         .tech-icon {
           padding: 1em;

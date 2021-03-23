@@ -13,6 +13,7 @@ export default class Projects extends Component {
           <div className="wrap section">
             <div className="title">
               <h2>Projects</h2>
+              <div className="section-title-underline"></div>
             </div>
             <div className="card-con">
               {/* <ProjectCard

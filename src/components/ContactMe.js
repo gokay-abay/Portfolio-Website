@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Fade from "react-reveal/Fade";
-import { firestore } from "../firebase";
+import React, { Component } from "react"
+import Fade from "react-reveal/Fade"
+import { firestore } from "../firebase"
 
 export default class ContactMe extends Component {
   state = {
@@ -8,33 +8,33 @@ export default class ContactMe extends Component {
     email: "",
     message: "",
     isSubmitted: false,
-  };
+  }
 
   //this.addLead = this.addLead(bind).this
 
   handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
+    this.setState({ [e.target.name]: e.target.value })
+  }
 
   addLead = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     firestore.collection("leads").add({
       name: this.state.name,
       email: this.state.email,
       message: this.state.message,
-    });
+    })
 
-    this.setState({ name: "", email: "", message: "" });
+    this.setState({ name: "", email: "", message: "" })
 
-    this.setState({ isSubmitted: true });
+    this.setState({ isSubmitted: true })
     setTimeout(() => {
-      this.setState({ isSubmitted: false });
-    }, 2000);
-  };
+      this.setState({ isSubmitted: false })
+    }, 2000)
+  }
 
   render() {
-    const { name, email, message } = this.state;
+    const { name, email, message } = this.state
 
     return (
       <div id="contact" className="form-cont">
@@ -42,6 +42,7 @@ export default class ContactMe extends Component {
           <Fade bottom cascade>
             <div className="wrap section">
               <h2>Let's Talk!</h2>
+              <div className="section-title-underline"></div>
               <form onSubmit={this.addLead} className="form">
                 <input
                   type="text"
@@ -83,6 +84,6 @@ export default class ContactMe extends Component {
           </div>
         )}
       </div>
-    );
+    )
   }
 }
